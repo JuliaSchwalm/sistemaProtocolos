@@ -1,0 +1,214 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/img.jpg'); 
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+}
+.custom-text {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 300; /* Ajuste o valor conforme a espessura desejada */
+    color: #1c1c85;
+    text-align: center;
+}
+
+.first-line {
+    margin-bottom: 5px; /* Adiciona um pequeno espaço entre as linhas */
+    margin-top: -70px;
+}
+
+.bg-container {
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%; 
+    margin: 0 auto;
+    background: linear-gradient(45deg, #fff, #fff), linear-gradient(45deg, #f3f3f3, #e0e0e0);
+    background-size: 50% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.login-box {
+    flex: 1;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    border: none; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    flex-direction: column; 
+}
+.logo img {
+   max-width: 100px;
+    margin-top: 10px; 
+}
+.left-side {
+    flex: 1;
+    padding-right: 20px; 
+    border-right: 1px solid #ccc; /* Adicionado para criar a divisão no meio */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side {
+    flex: 1;
+    padding-left: 20px; /* Adicionado para afastar o conteúdo da borda esquerda */
+    text-align: center;
+}
+
+.login-content {
+    display: flex;
+}
+
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+
+
+.right-side h2 {
+    color: #333;
+    text-align: center;
+}
+
+.right-side hr {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    
+}
+
+.input-group label {
+    display: block;
+}
+
+.input-group input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    background-color: #066ad4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    text-decoration: none;
+    color: #066ad4;
+}
+.radio-group {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; 
+
+}
+
+.radio-group input {
+    display: none;
+}
+
+.radio-group label {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.radio-group input:checked + label {
+    background-color: #066ad4;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* Restante do seu CSS existente ... */
+
+@media only screen and (max-width: 600px) {
+    .bg-container {
+        border-radius: 0;
+    }
+
+    .login-box {
+        border-radius: 0;
+        height: 100%;
+        padding: 10px; 
+    }
+
+    .right-side,
+    .left-side {
+        flex: 1;
+        padding: 10px; 
+        text-align: center;
+    }
+
+    .right-side {
+        padding-left: 10px;
+        padding-right: 10px;
+        border-left: none;
+    }
+
+    .left-side {
+        padding-right: 0; 
+        border-right: none; 
+    }
+
+    .login-content {
+        flex-direction: column; 
+    }
+    .custom-text {
+        font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+
+    .right-side h2 {
+        margin-top: 5px; /* Ajuste a margem conforme necessário para diminuir o espaço */
+    }
+    .first-line {
+        margin-bottom: 5px; /* Adiciona um pequeno espaço entre as linhas */
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,63 @@
+/* detalhes-protocolos.css */
+
+
+/* detalhes-protocolos.css */
+
+/* detalhes-protocolos.css */
+
+.detalhes-protocolo-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Ajuste adicionado para esticar itens verticalmente */
+    min-height: 80vh;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 10px;
+}
+
+.detalhes-header {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    flex-grow: 1; /* Adicionado para ocupar todo o espaço vertical disponível */
+}
+
+.descricao-protocolo {
+    background-color: #ffffff;
+    border-radius: 20px;
+
+    width: 85%;
+    height: 100%;
+    margin: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.protocolo-info {
+    margin-left: 30px;
+    font-size: 20px; 
+}
+
+.detalhes-protocolo-container-second {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; 
+}
+
+/* .descricao-protocolo,
+.respostas-protocolo {
+    margin-top: 20px;
+} */
+.detalhes-header,
+.descricao-protocolo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilização adicional conforme necessário */

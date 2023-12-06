@@ -1,0 +1,60 @@
+/* Adicione aqui os estilos comuns a todas as páginas */
+
+/* Adicione estilos específicos para a página de protocolo de limpeza pública */
+.widget-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 50px 350px;
+    position: relative;
+}
+
+.widget {
+    padding: 30px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    align-items: left;
+    text-align: left;
+}
+
+input,
+textarea {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+@media only screen and (max-width: 600px) {
+    input,
+    textarea {
+        width: 90%;
+
+    }
+    .widget-container {
+        margin: 10px;
+    }
+}

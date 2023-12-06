@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e7e6e6;
+}
+
+.homepage-header {
+    background-color: #f1f0f0;
+    /* Tom de cinza para a cor de fundo */
+    color: #000;
+    /* Cor do texto */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: space-between;
+    /* Distribui os itens uniformemente ao longo do eixo principal (horizontal) */
+    align-items: center;
+    /* Alinhar verticalmente ao centro */
+}
+
+.logo img {
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: row;
+    /* Ajustado para linha para colocar os textos ao lado da imagem */
+    align-items: center;
+    /* Alinhar verticalmente ao centro */
+}
+
+.text {
+
+    flex-direction: column;
+    /* Ajustado para linha para colocar os textos ao lado da imagem */
+    align-items: center;
+    /* Alinhar verticalmente ao centro */
+}
+
+.small-text,
+.large-text {
+    margin: 0;
+    /* Remove a margem padrão para evitar espaçamento extra */
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.large-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-right: 10px;
+    /* Adicionado espaçamento à direita para separar do logo */
+}
+
+.profile {
+    font-size: 20px;
+    /* Tamanho maior para "Meu Perfil" */
+    margin-left: auto;
+    margin-right: 10px;
+
+    /* Move "Meu Perfil" para o canto direito do cabeçalho */
+}
+.profile a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.navigation-bar {
+    background-color: #5a5a5a;
+    /* Cor de fundo da barra de navegação */
+    color: #fff;
+    /* Cor do texto da barra de navegação */
+    padding: 20px 0;
+    /* Adiciona um espaçamento interno superior e inferior */
+}
+
+.navigation-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Distribui uniformemente os itens ao longo da barra de navegação */
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.navigation-bar li {
+    margin-right: 15px;
+    /* Adiciona margem direita para separar os itens */
+}
+
+/* Estilo de hover para realçar quando o mouse passa por cima */
+.navigation-bar a:hover {
+    border-bottom: 2px solid #fff;
+    /* Adiciona uma borda inferior branca ao passar o mouse */
+}
+
+/* Adicione este estilo ao seu CSS */
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #5a5a5a;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Dropdown container (esconde os itens do menu) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+/* Links dentro do dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Mudar a cor do link ao passar o mouse */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar o dropdown quando o botão é hover ou focus */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .header-text {
+        flex-direction: row; /* Alterado para linha em telas menores */
+        align-items: center;
+    }
+
+    .large-text {
+        font-size: 18px; /* Tamanho menor em telas menores */
+        margin-top: 0;
+    }
+
+    .navigation-bar ul {
+        flex-direction:row;
+        align-items: center;
+    }
+
+    .navigation-bar li {
+        margin-right: 5px;
+        margin-left: 5px;
+      
+    }
+}

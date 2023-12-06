@@ -1,0 +1,121 @@
+/* homepage.css */
+
+
+
+
+/* PRIMEIRO WIDGET*/
+
+.widget-container {
+    background-color: #ffffff; /* Fundo cinza claro */
+    border-radius: 10px; /* Bordas levemente arredondadas */
+    margin: 50px 80px;/* Distância de 10px da lateral do navegador */
+    position: relative; /* Permite que o widget seja posicionado de forma absoluta em relação a este contêiner */
+}
+
+.widget {
+    padding: 30px;
+    text-align: center;
+}
+
+.widget input {
+    width: 30%;
+    padding: 8px; /* Ajuste o padding conforme necessário */
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; 
+}
+
+.search-container {
+    align-items: center;
+}
+
+.widget input {
+    flex: 1; /* Ocupa todo o espaço disponível no contêiner */
+}
+
+.search-button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 2px; /* Espaçamento entre o campo de pesquisa e o botão */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adiciona uma transição suave na cor de fundo */
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilo do ícone dentro do botão */
+.search-button i {
+    font-size: 16px;
+}
+
+/*SEUNDO WIDGET*/
+
+.second-widget-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 40px 80px 40px 80px;
+    position: relative;
+}
+
+.second-widget {
+    padding: 30px 200px;
+    text-align: center;
+}
+
+.menu-options {
+    list-style: none;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-options li {
+    border: 1px solid #066ad4;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-options li:hover {
+    background-color: #066ad4;
+}
+
+.menu-options i,
+.menu-options a {
+    color: #066ad4; /* Cor inicial do texto e do ícone */
+    text-decoration: none;
+}
+
+.menu-options li:hover i,
+.menu-options li:hover a {
+    color: #fff; /* Altera a cor do texto e do ícone ao passar o mouse */
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .widget-container {
+        margin: 10px; /* Reduz a margem vertical em telas menores */
+    }
+    .widget input {
+        width: 80%;
+    }
+    .second-widget-container {
+        margin: 10px;
+    }
+    .second-widget {
+        padding: 10px;
+    }
+    .menu-options {
+        padding: 0;
+    }
+}

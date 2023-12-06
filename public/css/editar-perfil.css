@@ -1,0 +1,51 @@
+/* Adicione o estilo conforme necessário para o layout da página */
+
+.edit-profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+/* Adiciona uma regra de mídia para telas menores que 600px */
+@media only screen and (max-width: 600px) {
+    input {
+        width: 90%; /* 50% de largura para telas menores */
+    }
+    .edit-profile-container {
+        margin: 10px;
+    }
+    .widget-meio-ambiente {
+        padding: 20px;
+    }
+}
