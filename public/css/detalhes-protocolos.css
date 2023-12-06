@@ -61,3 +61,53 @@
 }
 
 /* Estilização adicional conforme necessário */
+/* detalhes-protocolos.css */
+
+.respostas-protocolo {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 90%;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.respostas-list {
+    list-style-type: none; /* Remove a bolinha de lista */
+    padding: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .detalhes-protocolo-container {
+        flex-direction: column; 
+        margin: 10px;/* Muda a direção para coluna em telas menores */
+        font-size: 16px;
+    }
+    .detalhes-header{
+        font-size: 14px;
+        width: 88%;
+    }
+    .detalhes-protocolo-container-second {
+      /* Ocupa toda a largura em telas menores */
+      width: 88%;
+      margin: 0;
+    margin-top: 20px; /* Adiciona margem inferior entre os containers */
+
+
+    }
+    .protocolo-info{
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .descricao-protocolo {
+        padding: 15px; /* Reduz o padding para ocupar apenas o necessário */
+    }
+
+    .respostas-protocolo {
+        font-size: 15px;
+        padding: 15px; 
+    }
+}
