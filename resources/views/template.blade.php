@@ -26,10 +26,10 @@
             }
         }
 
-            function logout() {
-                window.location.href = "/";
+        function logout() {
+            window.location.href = "/";
 
-            }
+        }
     </script>
 
 </head>
@@ -38,11 +38,13 @@
     <header class="homepage-header">
         <div class="logo">
             <div class="header-text">
-                <img src="{{asset('images/brasao.png')}}" alt="Logo da Prefeitura">
-                <div class="text">
-                    <p class="small-text">Prefeitura Municipal de</p>
-                    <p class="large-text">Cerro Grande do Sul</p>
-                </div>
+                    <img src="{{asset('images/brasao.png')}}" alt="Logo da Prefeitura">
+                    <a href="\paginaInicial">
+                    <div class="text">
+                        <p class="small-text">Prefeitura Municipal de</p>
+                        <p class="large-text">Cerro Grande do Sul</p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="dropdown" id="profileDropdown">

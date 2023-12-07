@@ -19,6 +19,10 @@ class Controlador extends Controller
     {
         return view('cadastro-login');
     }
+    public function paginaInicial()
+    {
+        return view('pagina-inicial');
+    }
 
     public function preencheLogin(Request $request)
     {
@@ -32,6 +36,7 @@ class Controlador extends Controller
                 'cpf-cnpj' => $request->input('cpfCnpj'),
                 'senha' => $request->input('senha'),
             ]);
+            echo "<script>alert('Cadastrado com sucesso!');</script>";
         }
         return view('index');
     }

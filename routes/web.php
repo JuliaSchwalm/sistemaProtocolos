@@ -21,6 +21,8 @@ Route::post('/', 'App\Http\Controllers\Controlador@preencheLogin' ) -> name ('fo
 
 Route::post('/paginaInicial', 'App\Http\Controllers\Controlador@validaLogin' ) -> name ('validaLogin');
 
+Route::get('/paginaInicial', 'App\Http\Controllers\Controlador@paginaInicial' );
+
 Route::get('/meioAmbiente', 'App\Http\Controllers\Controlador@meioAmbiente');
 
 Route::get('/abrirProtocolo', 'App\Http\Controllers\Controlador@abrirProtocolo');
