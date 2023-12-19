@@ -57,7 +57,7 @@ Meio ambiente
             <i class="fas fa-plus-circle"></i>
             <a href="/abrirProtocolo">Abrir Protocolo</a>
         </div>
-        <!-- Adicione mais 5 blocos similares para os outros assuntos -->
+   
     </div>
 </div>
 @stop

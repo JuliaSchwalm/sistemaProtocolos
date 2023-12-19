@@ -21,7 +21,6 @@ Página Inicial
 <script>
     function selecionaSetor(setor) {
         sessionStorage.setItem('setorSelecionado', setor);
-        // window.location.href = "/abrirProtocolo";
     }
 </script>
 

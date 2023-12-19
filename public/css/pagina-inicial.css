@@ -1,15 +1,8 @@
-/* homepage.css */
-
-
-
-
-/* PRIMEIRO WIDGET*/
-
 .widget-container {
-    background-color: #ffffff; /* Fundo cinza claro */
-    border-radius: 10px; /* Bordas levemente arredondadas */
-    margin: 50px 80px;/* Distância de 10px da lateral do navegador */
-    position: relative; /* Permite que o widget seja posicionado de forma absoluta em relação a este contêiner */
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 50px 80px;
+    position: relative;
 }
 
 .widget {
@@ -19,11 +12,11 @@
 
 .widget input {
     width: 30%;
-    padding: 8px; /* Ajuste o padding conforme necessário */
+    padding: 8px;
     margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .search-container {
@@ -31,30 +24,28 @@
 }
 
 .widget input {
-    flex: 1; /* Ocupa todo o espaço disponível no contêiner */
+    flex: 1;
 }
 
 .search-button {
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
+    background-color: #007bff;
+    color: #fff;
     border: none;
     padding: 8px;
     border-radius: 5px;
-    margin-left: 2px; /* Espaçamento entre o campo de pesquisa e o botão */
+    margin-left: 2px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Adiciona uma transição suave na cor de fundo */
+    transition: background-color 0.3s;
 }
 
 .search-button:hover {
-    background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse */
+    background-color: #0056b3;
 }
 
-/* Estilo do ícone dentro do botão */
+
 .search-button i {
     font-size: 16px;
 }
-
-/*SEUNDO WIDGET*/
 
 .second-widget-container {
     background-color: #ffffff;
@@ -91,30 +82,34 @@
 
 .menu-options i,
 .menu-options a {
-    color: #066ad4; /* Cor inicial do texto e do ícone */
+    color: #066ad4;
     text-decoration: none;
 }
 
 .menu-options li:hover i,
 .menu-options li:hover a {
-    color: #fff; /* Altera a cor do texto e do ícone ao passar o mouse */
+    color: #fff;
 }
 
 
 
 @media only screen and (max-width: 600px) {
     .widget-container {
-        margin: 10px; /* Reduz a margem vertical em telas menores */
+        margin: 10px;
     }
+
     .widget input {
         width: 80%;
     }
+
     .second-widget-container {
         margin: 10px;
     }
+
     .second-widget {
         padding: 10px;
     }
+
     .menu-options {
         padding: 0;
     }

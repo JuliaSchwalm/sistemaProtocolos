@@ -1,14 +1,7 @@
-/* detalhes-protocolos.css */
-
-
-/* detalhes-protocolos.css */
-
-/* detalhes-protocolos.css */
-
 .detalhes-protocolo-container {
     display: flex;
     justify-content: center;
-    align-items: stretch; /* Ajuste adicionado para esticar itens verticalmente */
+    align-items: stretch;
     min-height: 80vh;
     margin-left: 120px;
     margin-right: 120px;
@@ -22,7 +15,7 @@
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
-    flex-grow: 1; /* Adicionado para ocupar todo o espaço vertical disponível */
+    flex-grow: 1;
 }
 
 .descricao-protocolo {
@@ -38,7 +31,7 @@
 
 .protocolo-info {
     margin-left: 30px;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 .detalhes-protocolo-container-second {
@@ -47,21 +40,15 @@
     width: 50%;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
-/* .descricao-protocolo,
-.respostas-protocolo {
-    margin-top: 20px;
-} */
 .detalhes-header,
 .descricao-protocolo {
     display: flex;
     flex-direction: column;
 }
 
-/* Estilização adicional conforme necessário */
-/* detalhes-protocolos.css */
 
 .respostas-protocolo {
     background-color: #ffffff;
@@ -74,40 +61,42 @@
 }
 
 .respostas-list {
-    list-style-type: none; /* Remove a bolinha de lista */
+    list-style-type: none;
     padding: 0;
 }
 
 
 @media only screen and (max-width: 600px) {
     .detalhes-protocolo-container {
-        flex-direction: column; 
-        margin: 10px;/* Muda a direção para coluna em telas menores */
+        flex-direction: column;
+        margin: 10px;
         font-size: 16px;
     }
-    .detalhes-header{
+
+    .detalhes-header {
         font-size: 14px;
         width: 88%;
     }
+
     .detalhes-protocolo-container-second {
-      /* Ocupa toda a largura em telas menores */
-      width: 88%;
-      margin: 0;
-    margin-top: 20px; /* Adiciona margem inferior entre os containers */
 
-
-    }
-    .protocolo-info{
-        font-size: 15px;
+        width: 88%;
         margin: 0;
-    }
+        margin-top: 20px;
 
-    .descricao-protocolo {
-        padding: 15px; /* Reduz o padding para ocupar apenas o necessário */
     }
+}
+
+.protocolo-info {
+    font-size: 15px;
+    margin: 0;
+}
+
+.descricao-protocolo {
+    padding: 15px;
 
     .respostas-protocolo {
         font-size: 15px;
-        padding: 15px; 
+        padding: 15px;
     }
 }

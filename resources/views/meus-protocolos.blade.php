@@ -16,7 +16,6 @@ Meus Protocolos
 <div class="protocol-list-container">
     <h2 class="page-title">Meus Protocolos</h2>
 
-    <!-- Dropdown para selecionar a situação dos protocolos -->
     <div class="dropdown">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Selecione a Situação
@@ -29,7 +28,6 @@ Meus Protocolos
 </div>
 
 
-    <!-- Tabela para exibir os protocolos -->
     <div class="table-container">
         <table class="protocol-list" id="protocol-list">
             <thead>
@@ -42,16 +40,14 @@ Meus Protocolos
                 </tr>
             </thead>
             <tbody>
-                <!-- Aqui será inserido dinamicamente o conteúdo da tabela com AJAX -->
             </tbody>
         </table>
     </div>
 </div>
 
 <script>
-    // Verifica se o jQuery está definido antes de usar
+
     if (typeof jQuery != 'undefined') {
-        // Função para carregar os protocolos com AJAX
         function carregarProtocolos(situacao) {
             $.ajax({
                 url: '/get-protocolos',  // Atualizado para o caminho correto

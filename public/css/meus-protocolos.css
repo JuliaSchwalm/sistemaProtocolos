@@ -4,7 +4,6 @@
     margin-right: 120px;
     text-align: center;
     background-color: #ffffff;
-    /* position: relative; */
     border-radius: 10px;
 
 }
@@ -16,8 +15,8 @@
 
 .table-container {
     overflow-x: auto;
-     margin: 30px;
-} 
+    margin: 30px;
+}
 
 .protocol-list {
     width: 70%;
@@ -38,42 +37,38 @@
 
 .protocol-list th {
     background-color: #f1f1f1;
-    /* Cinza claro para cabeçalho */
 }
 
 .protocol-list tr:nth-child(even) {
     background-color: #dfdede91;
-    /* Cinza mais claro para linhas pares */
 }
 
 .protocol-list tr:hover {
     background-color: #f0f0f0;
-    /* Cinza ainda mais claro ao passar o mouse */
 }
-/* Estilo para os botões de filtro */
+
 .dropdown-item {
-    background-color: #ffffff; /* Fundo branco */
+    background-color: #ffffff;
     color: #066ad4;
-     /* Cor do texto */
-    border: 1px solid #066ad4; /* Borda ao redor do botão */
-    border-radius: 5px; /* Bordas levemente arredondadas */
-    margin: 5px; /* Espaçamento entre os botões */
-    padding: 10px; /* Espaçamento interno */
+
+    border: 1px solid #066ad4;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transições suaves */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     margin-bottom: 20px;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .dropdown-item:hover {
-    background-color: #066ad4; /* Altera a cor de fundo ao passar o mouse */
-    color: #fff; /* Altera a cor do texto ao passar o mouse */
-    border-color: #fff; /* Altera a cor da borda ao passar o mouse */
+    background-color: #066ad4;
+    color: #fff;
+    border-color: #fff;
 }
 
-/* Remover estilo do botão da dropdown */
 .btn-secondary {
-    display: none; /* Oculta o botão da dropdown */
+    display: none;
 }
 
 
@@ -83,12 +78,13 @@
     .protocol-list-container {
         margin: 10px;
         padding: 5px;
-        /* Reduz a margem vertical em telas menores */
+
         flex-direction: column;
     }
+
     .dropdown-item {
-        margin: 4px; /* Espaçamento entre os botões */
-        padding: 10px; /* Espaçamento interno */
+        margin: 4px;
+        padding: 10px;
     }
-    
+
 }

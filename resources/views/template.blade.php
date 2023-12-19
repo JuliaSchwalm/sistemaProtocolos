@@ -10,9 +10,7 @@
 
     <link rel="icon" href="{{asset('images/brasao.png')}}" type="image/x-icon">
     <title>@yield('titulo')</title>
-    <!-- Adicione este script ao seu HTML -->
     <script>
-        // Fechar o dropdown se o usuário clicar fora dele
         window.onclick = function (event) {
             if (!event.target.matches('.dropbtn')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
